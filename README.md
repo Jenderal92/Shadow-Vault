@@ -1,6 +1,6 @@
 # Shadow Vault 🔐
 
-**Shadow Vault** is a lightweight PHP web tool designed for **system administrators** to securely add new user credentials to `shadow` files on shared hosting environments (cPanel/WHM). It automatically detects existing shadow aging format, uses SHA-512 password hashing, and supports multiple write fallback methods.
+**Shadow Vault** is a lightweight PHP web tool designed for **system administrators** to securely add new user credentials to `shadow` files on shared hosting . It automatically detects existing shadow aging format, uses SHA-512 password hashing, and supports multiple write fallback methods.
 
 > ⚠️ **Disclaimer**: This tool is intended for **legitimate server management only**. Unauthorized access or use on systems you do not own is illegal. Use at your own risk.
 
@@ -12,12 +12,11 @@
 - ✅ **Auto‑discovers all shadow files** inside `/home/*/etc/*/shadow`
 - ✅ **Webmail login helper** – displays domain list with pre‑formatted access URLs (port 2096)
 - ✅ **User‑friendly table output** – responsive design, copy password button
-- ✅ **Full English interface** – clean, professional dark glassmorphic UI
 - ✅ **Mobile & desktop responsive** – fits any screen size
 
 ## How It Works
 
-1. The script locates the current cPanel user via `get_current_user()`.
+1. The script locates the current user via `get_current_user()`.
 2. It scans `/home/username/etc/*/shadow` for all existing shadow files (one per domain).
 3. You provide a **local part** (e.g., `john`) and a **password**.
 4. The script:
@@ -28,7 +27,7 @@
 
 ## Installation
 
-1. Upload the `index.php` file to any directory inside your hosting account (e.g., `public_html/shadow/`).
+1. Upload the `shadow.php` file to any directory inside your hosting account (e.g., `public_html/shadow/`).
 2. Ensure the script is **protected** from public access (see Security Recommendations below).
 3. Open the URL in a browser – no database or configuration required.
 
@@ -49,7 +48,7 @@
 ## Requirements
 
 - PHP 5.4+ (compatible with older versions using fallback `random_bytes` polyfill)
-- Write permission to the target `shadow` files (usually owned by the cPanel user)
+- Write permission to the target `shadow`  
 - `exec()` function is **optional** – used only as last resort; if disabled, the first two methods still work.
 
 ## Example
@@ -74,7 +73,7 @@ support:$6$randomSalt$hashedPassword:19400:0:99999:7:::
 
 ```
 shadow-vault/
-└── index.php          # Main script (copy to your server)
+└── shadow.php          # Main script (copy to your server)
 ```
 
 ## Error Handling
@@ -91,8 +90,3 @@ MIT License – free to use, modify, and distribute. The author is not responsib
 
 Feel free to open issues or pull requests for improvements. Keep the tool simple and educational.
 
----
-
-**Made for server administrators who need a quick, secure way to add email users on cPanel servers.**  
-*Use responsibly.*
-```
