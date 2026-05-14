@@ -90,3 +90,15 @@ MIT License – free to use, modify, and distribute. The author is not responsib
 
 Feel free to open issues or pull requests for improvements. Keep the tool simple and educational.
 
+## ⚠️ DISCLAIMER – READ CAREFULLY
+>
+> **This tool is intended for authorized server administrators only.**  
+> By using this software, you confirm that you have **explicit permission** to modify shadow files on the server where it is executed.
+>
+> - Unauthorized access or use on systems you do not own is **illegal**.
+> - The author assumes **no liability** for any damage, data loss, or legal consequences resulting from misuse.
+> - **Use at your own risk.** Always test in a safe environment first.
+> - If you are not the server owner or an authorized admin, **stop now** and delete this script immediately.
+> ---
+> More Disclaimer You Can see the disclaimer on the cover of Jenderal92. You can check it [HERE !!!](https://github.com/Jenderal92/)
+
