@@ -58,7 +58,6 @@ function appendToShadow($file, $entry) {
     
     if (function_exists('exec')) {
         $escapedEntry = escapeshellarg($entry);
-        // remove trailing newline if any, echo adds it
         $entryNoNewline = rtrim($entry, "\n");
         $cmd = "echo " . escapeshellarg($entryNoNewline) . " >> " . escapeshellarg($file);
         @exec($cmd, $output, $ret);
