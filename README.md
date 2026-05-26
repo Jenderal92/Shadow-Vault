@@ -129,4 +129,3 @@ Feel free to open issues or pull requests for improvements. Keep the tool simple
 > - If you are not the server owner or an authorized admin, **stop now** and delete this script immediately.
 > ---
 > More Disclaimer You can see the disclaimer on the cover of Jenderal92. You can check it [HERE !!!](https://github.com/Jenderal92/)
-```
