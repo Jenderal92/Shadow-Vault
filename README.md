@@ -1,6 +1,7 @@
 # Shadow Vault 🔐
 
-<img width="1200" height="1200" alt="Shadow Vault" src="https://github.com/user-attachments/assets/0ea239da-0632-48d7-947a-ab9064704b7e" />
+<img width="900" height="1000" alt="Shadow Vault" src="https://github.com/user-attachments/assets/ec72fc90-a47a-4156-b52b-37c9db72c80a" />
+
 
 **Shadow Vault** is a lightweight PHP web tool designed for **system administrators** to securely add new user credentials to `shadow` files on shared hosting environments. It automatically detects existing shadow aging format, uses SHA-512 password hashing, supports multiple write fallback methods, and even provides **one-click auto-login** to cPanel webmail (port 2096).
 
